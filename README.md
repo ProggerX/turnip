@@ -16,7 +16,7 @@ turnip is just NixOS module, so add it to your system flake inputs and import:
                 {
                     turnip = {
                         enable = true;
-                    }
+                    };
                 }
             ];
         };
