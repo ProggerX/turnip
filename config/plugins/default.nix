@@ -17,7 +17,25 @@
 		comment.enable = true;
 		lazygit.enable = true;
 		alpha.enable = true;
-		alpha.theme = "dashboard";
+		alpha.layout = [
+			{
+				type = "text";
+				opts = {
+					hl = "AlphaHeader";
+					position = "center";
+				};
+				val = [
+					"  _______               _       "
+					" |__   __|             (_)      "
+					"    | |_   _ _ __ _ __  _ _ __  "
+					"    | | | | | '__| '_ \| | '_ \ "
+					"    | | |_| | |  | | | | | |_) |"
+					"    |_|\__,_|_|  |_| |_|_| .__/ "
+					"                         | |    "
+					"                         |_|    "
+				];
+			}
+		];
 	};
 	programs.nixvim.extraPlugins = with pkgs; [
 		{
