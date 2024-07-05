@@ -16,6 +16,8 @@
 		barbar.enable = true;
 		comment.enable = true;
 		lazygit.enable = true;
+		alpha.enable = true;
+		alpha.theme = "dashboard";
 	};
 	programs.nixvim.extraPlugins = with pkgs; [
 		{
