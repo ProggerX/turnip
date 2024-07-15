@@ -30,6 +30,7 @@
 				shiftwidth = 4;
 				tabstop = 4;
 				smartindent = true;
+				nofoldenable = true;
 			};
 			clipboard.register = "unnamedplus";
 		};
