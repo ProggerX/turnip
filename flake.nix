@@ -8,5 +8,6 @@
 	
 	outputs = { ... }@inputs: {
 		nixosModules.turnip = { ... }: {imports = [inputs.nixvim.nixosModules.nixvim ./config];};
+		homeManagerModules.turnip = { ... }: {imports = [inputs.nixvim.homeManagerModules.nixvim ./config];};
 	};
 }
