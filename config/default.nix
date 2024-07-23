@@ -18,6 +18,11 @@
 		programs.nixvim = lib.mkMerge [cfg.custom {
 			enable = true;
 			vimAlias = cfg.vimAlias;
+			extraConfigLua = ''
+if vim.g.neovide then
+		vim.o.guifont = "JetBrainsMono Nerd Font:h17";
+end
+'';
 		}];
 	};
 	imports = [
