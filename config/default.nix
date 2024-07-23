@@ -20,7 +20,8 @@
 			vimAlias = cfg.vimAlias;
 			extraConfigLua = ''
 if vim.g.neovide then
-		vim.o.guifont = "JetBrainsMono Nerd Font:h17";
+	vim.o.guifont = "JetBrainsMono Nerd Font:h17"
+	vim.g.neovide_transparency = 0.7
 end
 '';
 		}];
