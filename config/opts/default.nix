@@ -31,6 +31,7 @@
 				tabstop = 4;
 				smartindent = true;
 				foldenable = false;
+				vim.o.guifont = "JetBrainsMono Nerd Font:h17";
 			};
 			clipboard.register = "unnamedplus";
 		};
