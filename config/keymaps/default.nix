@@ -1,6 +1,14 @@
 { ... }: {
 	programs.nixvim.keymaps = [
 		{
+			action = "<cmd>Trouble diagnostics toggle<CR>";
+			key = "<leader>tt";
+		}
+		{
+			action = "<cmd>Trouble lsp toggle<CR>";
+			key = "<leader>tl";
+		}
+		{
 			action = "<cmd>Telescope live_grep<CR>";
 			key = "<leader>tg";
 		}
