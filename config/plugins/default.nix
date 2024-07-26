@@ -8,6 +8,10 @@
 		trouble.enable = true;
 		trouble.settings.auto_close = true;
 		treesitter.enable = true;
+		treesitter.settings = {
+			ensure_installed = "go";
+			auto_install = false;
+		};
 		oil.enable = true;
 		tmux-navigator.enable = true;
 		nvim-autopairs.enable = true;
