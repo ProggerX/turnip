@@ -9,7 +9,7 @@
 		trouble.settings.auto_close = true;
 		treesitter.enable = true;
 		treesitter.settings = {
-			ensure_installed = "go";
+			ensure_installed = ["go"];
 			auto_install = false;
 		};
 		oil.enable = true;
