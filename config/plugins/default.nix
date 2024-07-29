@@ -1,6 +1,7 @@
 { pkgs, ... }: {
 	programs.nixvim.plugins = {
 		indent-blankline.enable = true;
+		codeium-nvim.enable = true;
 		telescope.enable = true;
 		flash.enable = true;
 		persistence.enable = true;
