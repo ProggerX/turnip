@@ -6,7 +6,7 @@
 					installCargo = false;
 					installRustc = false;
 					enable = true;
-					package = pkgs.rust-bin.selectLatestNightlyWith (toolchain: toolchain.default);
+					package = pkgs.rust-bin.stable.latest.default;
 				};
 				clangd.enable = true;
 				nixd.enable = true;
