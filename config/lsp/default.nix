@@ -1,4 +1,4 @@
-{ config, lib, ... }: {
+{ config, pkgs, lib, ... }: {
 	options = {
 		turnip.lsp_servers = lib.mkOption {
 			default = {
@@ -6,7 +6,7 @@
 					installCargo = false;
 					installRustc = false;
 					enable = true;
-					cmd = ["rust-analyzer"];
+					package = pkgs.rust-bin.selectLatestNightlyWith (toolchain: toolchain.default);
 				};
 				clangd.enable = true;
 				nixd.enable = true;
