@@ -4,8 +4,10 @@
 		autoEnableSources = true;
 		settings = {
 			window = {
-				"completion" = "cmp.config.window.bordered()";
-				"documentation" = "cmp.config.window.bordered()";
+				__raw = ''
+					completion = cmp.config.window.bordered(),
+					documentation = cmp.config.window.bordered(),
+				'';
 			};
 			sources = [ { name = "codeium"; } { name = "nvim_lsp"; } { name = "path"; } { name = "buffer"; }];
 			mapping = {
