@@ -6,9 +6,7 @@
 					installCargo = false;
 					installRustc = false;
 					enable = true;
-					package = pkgs.rust-bin.stable.latest.default.override {
-						extensions = [ "rust-analyzer" ];
-					};
+					cmd = ["/run/current-system/sw/bin/rust-analyzer"];
 				};
 				clangd.enable = true;
 				nixd.enable = true;
