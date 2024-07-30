@@ -6,6 +6,7 @@
 					installCargo = false;
 					installRustc = false;
 					enable = true;
+					cmd = "rust-analyzer";
 				};
 				clangd.enable = true;
 				nixd.enable = true;
