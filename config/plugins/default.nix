@@ -1,7 +1,6 @@
 { pkgs, ... }: {
 	programs.nixvim.plugins = {
 		indent-blankline.enable = true;
-		codeium-nvim.enable = true;
 		telescope.enable = true;
 		flash.enable = true;
 		persistence.enable = true;
@@ -21,6 +20,12 @@
 		barbar.enable = true;
 		comment.enable = true;
 		lazygit.enable = true;
+		codeium-nvim = {
+			enable = true;
+			extraOptions = {
+				enable_chat = true;
+			};
+		};
 		alpha.enable = true;
 		alpha.layout = [
 			{
