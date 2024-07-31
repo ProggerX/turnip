@@ -7,6 +7,7 @@
 		surround.enable = true;
 		trouble.enable = true;
 		trouble.settings.auto_close = true;
+		emmet.enable = true;
 		treesitter.enable = true;
 		treesitter.settings = {
 			ensure_installed = ["go"];
@@ -35,14 +36,14 @@
 					position = "center";
 				};
 				val = [
-					"  _______               _       "
-					" |__   __|             (_)      "
-					"    | |_   _ _ __ _ __  _ _ __  "
-					"    | | | | | '__| '_ \\| | '_ \\ "
-					"    | | |_| | |  | | | | | |_) |"
-					"    |_|\\__,_|_|  |_| |_|_| .__/ "
-					"                         | |    "
-					"                         |_|    "
+					"	_______							 _			 "
+					" |__	 __|						 (_)			"
+					"		| |_	 _ _ __ _ __	_ _ __	"
+					"		| | | | | '__| '_ \\| | '_ \\ "
+					"		| | |_| | |	| | | | | |_) |"
+					"		|_|\\__,_|_|	|_| |_|_| .__/ "
+					"												 | |		"
+					"												 |_|		"
 				];
 			}
 		];
@@ -62,6 +63,17 @@
 					repo = "nerdy.nvim";
 					rev = "1ad36242f40a8fd95ae5711258540a07a5dabb51";
 					sha256 = "sha256-xIWeN4/wY8Jzi7iEuJFkEUXmTVQ6OK+r/7XYDX/5NqM=";
+				};
+			};
+		}
+		{
+			plugin = vimUtils.buildVimPlugin {
+				name = "cmp-emmet-vim";
+				src = fetchFromGitHub {
+					owner = "dcampos";
+					repo = "cmp-emmet-vim";
+					rev = "0fb9a6eae7c1a56b7f460a80a09a402a57a7cc99";
+					hash = "sha256-w37CmFNh33ACmWgYU2kM7MbuRdwi7URVquJgjRPE1gA=";
 				};
 			};
 		}

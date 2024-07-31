@@ -9,7 +9,7 @@
 					documentation = cmp.config.window.bordered(),
 				},'';
 			};
-			sources = [ { name = "codeium"; } { name = "nvim_lsp"; } { name = "path"; } { name = "buffer"; }];
+			sources = [ { name = "emmet_vim"; } { name = "codeium"; } { name = "nvim_lsp"; } { name = "path"; } { name = "buffer"; }];
 			mapping = {
 				"<M-CR>" = "cmp.mapping.confirm({ select = true })";
 				"<C-Space>" = "cmp.mapping.complete()";
