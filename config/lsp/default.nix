@@ -12,6 +12,7 @@
 				nixd.enable = true;
 				pyright.enable = true;
 				gopls.enable = true;
+				tsserver.enable = true;
 			};
 			description = "Lsp servers";
 		};
